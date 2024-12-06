@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Happy birthday Shapla!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <style>
+      .canNone {
+        display: none;
+      }
+      .canvasBlock {
+        display: block;
+      }
+      .node {
+        display: none;
+      }
+
+      button {
+        padding: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        color: hotpink;
+        background-color: green;
+        border-radius: 7px;
+        border: none;
+      }
+      button:hover {
+        background-color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <canvas class="canNone can" id="c"></canvas>
+    <div
+      id="button"
+      style="position: absolute; bottom: 20px; left: 40%"
+      class="canNone"
+    >
+      <a href="./happy-birthday/index.html">
+        <button>Click & Next Wish</button></a
+      >
+    </div>
+    <div id="first-intro">
+      <h1>Birthday Countdown</h1>
+      <p id="instruction">Time left until the birthday:</p>
+      <div id="countdown">Loading...</div>
+      <div id="birthday-message" onclick="startAnimation()">
+        Today is your Birthday! Click to Celebrate!
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+  </body>
+</html>
