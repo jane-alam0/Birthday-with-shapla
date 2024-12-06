@@ -13,11 +13,10 @@ nextButton.addEventListener("click", () => {
   wish2Btn.style.display = "none";
   wish2.style.display = "block";
 
-  // const button = document.getElementById("button");
-  // console.log(button);
-  // setTimeout(() => {
-  //   button.classList.remove("canNone");
-  // }, 10000);
+  const button = document.getElementById("button");
+  setTimeout(() => {
+    button.style.display = "";
+  }, 10000);
 });
 
 // container
