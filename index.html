@@ -30,6 +30,20 @@
       button:hover {
         border: solid blue 5px;
       }
+      .btn {
+        animation: scaling 2s infinite;
+      }
+      @keyframes scaling {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
     </style>
   </head>
   <body>
@@ -38,7 +52,7 @@
     <div
       id="button"
       style="position: absolute; bottom: 20px; left: 30%"
-      class="canNone"
+      class="canNone btn"
     >
       <a href="./happy-birthday/index.html"> <button>Click & Next</button></a>
     </div>

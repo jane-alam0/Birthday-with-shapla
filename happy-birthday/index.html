@@ -9,6 +9,22 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900"
     />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      .btn {
+        animation: scaling 2s infinite;
+      }
+      @keyframes scaling {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- partial:index.partial.html -->
@@ -42,6 +58,7 @@
 
       <canvas id="birthday"></canvas>
       <a
+        class="btn"
         style="
           display: none;
           position: absolute;
@@ -61,6 +78,7 @@
     </div>
     <div
       id="wish2Btn"
+      class="btn"
       style="
         display: flex;
         /* justify-content: center; */
