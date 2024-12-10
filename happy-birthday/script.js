@@ -2,7 +2,7 @@
 const PI2 = Math.PI * 2;
 const random = (min, max) => (Math.random() * (max - min + 1) + min) | 0;
 const timestamp = (_) => new Date().getTime();
-const audio2 = new Audio("/audio2.mp3");
+const audio2 = new Audio("./audio2.mp3");
 
 const nextButton = document.getElementById("next-wish");
 const wish2 = document.getElementById("wish2");
